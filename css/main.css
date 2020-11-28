@@ -27,6 +27,7 @@ p{
   margin-top: 0.8em;
   line-height: 1.3em;
   font-size: 1.2em;
+  /* font-weight: 300; */
 }
 .canvas{
   max-width: 1080px;
@@ -52,13 +53,21 @@ nav{
   margin-left: 48px;
   font-size: 1.2em;
   text-decoration: none;
- 
-  
+  color: black;
+
 }
+
+ 
+a {
+  color: black;
+  text-decoration: none;
+}
+
 .nav a:visited{
   text-decoration: none;
   color: black;
 }
+
 a:visited{
   text-decoration: none;
   color: black;
@@ -155,10 +164,7 @@ ul{
   box-shadow: 0 4px 8px 0 #DDDDDD;
 }
 
-/* .flexbox-1-item2:hover{
-  transition: .3s cubic-bezier(.455,.03,.515,.955);
-  box-shadow: .3s;
-} */
+
 
 
 /*footer*/
@@ -209,27 +215,13 @@ ul{
   opacity: 1;
 }
 
-.bottom-nav{
+.demo{
+  display: block;
+  margin: 0 auto;
+}
+.flexitem-6-1{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  color: #999;
-  font-weight: 600;
-  padding: 10px 10px 10px 10px;
-
-}
-.bottom-nav p{
-  border-style: solid;
-  padding: 3px 8px 3px 8px;
-  transition: 0.2s ease-out;
-
-}
-
-.bottom-nav p:hover{
-  color: #9BD19A;
-
-  
-
 }
 
 /* Grow Shadow */
@@ -272,12 +264,14 @@ ul{
   font-size: 3em;
 }
 .work-intro{
-  font-size: 1.8em;
+  font-size: 1.5em;
   margin-top: 0.5em;
 }
 .work-type{
   font-size: 1.2em;
   margin-top: 0.5em;
+  font-weight: 400;
+  color: #707070;
 }
 
 /* Shadow */
@@ -497,6 +491,21 @@ video{
 }
 
 
+.bottom-nav{
+  color: #999;
+  font-weight: 600;
+  padding: 10px 10px 10px 10px;
+}
+
+.bottom-nav p:hover{
+  background-color: #9BD19A;
+  transition: 0.3s ease-out;
+  color: white
+}
+
+
+
+
 /*css for ui/ux page */
 .work-nav{
   display: flex;
@@ -534,12 +543,17 @@ video{
 .hvr-fade a:visited{
   text-decoration: none;
 }
-a:visited{
-  text-decoration: none;
+
+
+
+.resume{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
 }
-
-
-
 
 
 /* ar-pokemon page */
@@ -553,8 +567,41 @@ a-scene {
   display: block;
   height: 40vh;
   max-width: 100%;
-  background-color: brown
-  ;
+  background-color: brown;
+}
+
+
+/* For process book button */
+.process-book a{
+  font-size: 1.6em;
+  font-weight: 600;
+  width: 25%;
+  padding: 8px 5px 8px 5px;
+  border-color: #9BD19A;
+  border-style: solid;
+  border-radius: 6px;
+  background-color: #9BD19A;
+  margin: 0 auto;
+  text-align: center;
+  color: white;
+}
+
+.process-book a:hover{
+  border-color: black;
+  border-style: solid;
+  padding: 8px 5px 8px 5px;
+  border-radius: 6px;
+  color: black;
+  background-color: white;
+  cursor: pointer;
+  transition: 0.3s ease-out;
+}
+
+.process-book{
+  margin-top: 3em;
+  display: flex;
+  align-items: center;
+  
 }
 
 /*
@@ -717,6 +764,19 @@ textarea {
 
 @media only screen and (min-width: 758px) {
   /* Style adjustments for viewports that meet the condition */
+   /*css for about page */
+  .bio{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+
+  .bio-item1{
+  width: 40%;
+  }
+  .bio-item2{
+  width: 55%;
+  }
   
   /* For Spine page */
   .spine-intro{
@@ -749,6 +809,23 @@ textarea {
   h3{
     font-size: 1.4em;
     margin-top: 0.8em;
+  }
+
+  .modules{
+    display: flex;
+    flex-direction: column;
+    
+  }
+
+  .module-items1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .module{
+    width:500px;
+    height:300px;
   }
 
   /* For GA page */
@@ -819,6 +896,44 @@ textarea {
   column-gap: 3em;
   row-gap: 3em;
 }
+
+/* For Botton navigation bar */
+
+.bottom-nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: #999;
+  font-weight: 600;
+  padding: 10px 10px 10px 10px;
+  
+}
+
+.bottom-nav p{
+  border-style: solid;
+  padding: 3px 8px 3px 8px;
+  transition: 0.3s ease-out;
+  border-radius: 6px;
+}
+
+.bottom-nav p a{
+  color: #999;
+}
+
+.bottom-nav p a:hover{
+  color: white;
+}
+
+
+.bottom-nav p:hover{
+  color: #FFFFFF;
+  cursor: pointer;
+  border-style: solid;
+  border-color: #9BD19A;
+  background-color: #9BD19A;
+}
+
+
 
 /* For visual design page */
 .gallery2{
@@ -893,8 +1008,6 @@ textarea {
 } */
 .flexitem-6-1{
   width: 56%;
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 .flexitem-6-2{
@@ -928,7 +1041,7 @@ textarea {
     text-shadow: none !important;
   }
 
-  a,
+  /* a,
   a:visited {
     text-decoration: underline;
   }
@@ -939,7 +1052,7 @@ textarea {
 
   abbr[title]::after {
     content: " (" attr(title) ")";
-  }
+  } */
 
   /*
    * Don't show links that are fragment identifiers,
