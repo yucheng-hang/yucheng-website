@@ -26,7 +26,7 @@ html {
 p{
   margin-top: 0.8em;
   line-height: 1.3em;
-  font-size: 1.2em;
+  font-size: 1.3em;
   /* font-weight: 300; */
 }
 .canvas{
@@ -559,7 +559,7 @@ video{
 /* ar-pokemon page */
 .ar-pokemon-banner{
   height: 300px;
-  background-image: url("../img/ar-pokemon-cover.gif");
+  background-image: url("../img/ar-pokemon.gif");
   background-repeat: no-repeat;
   
 }
@@ -984,7 +984,7 @@ textarea {
 /* css for ar pokemon page */
 .ar-pokemon-banner{
   height: 550px;
-  background-image: url("../img/ar-pokemon-cover.gif");
+  background-image: url("../img/ar-pokemon.gif");
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }
