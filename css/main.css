@@ -800,13 +800,18 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
   }
-  /* .objectives-1{
-    width: 48%;
+  .objectives-1{
+    width: 32%;
   }
   .objectives-2{
-    width: 48%;
-  } */
+    width: 32%;
+  }
+  .objectives-3{
+    width: 32%;
+  }
  
+
+
 
   h3{
     font-size: 1.4em;
@@ -981,6 +986,20 @@ textarea {
   grid-row-start: 5;
   grid-row-end: 9;
 }
+
+/* artnest page */
+.persona{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.flow{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
 
 /* cybertown page   */
 .feature1{
