@@ -789,10 +789,10 @@ textarea {
   }
   
   .spine-intro-item1{
-    width: 49%;
+    width: 60%;
   }
   .spine-intro-item2{
-    width: 40%;
+    width: 35%;
   }
 
   .objectives{
@@ -829,7 +829,16 @@ textarea {
     flex-direction: row;
     justify-content: space-between;
   }
-
+  .module-videos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  .module-videos-item{
+    max-width: 45%;
+  }
+ 
   .module{
     width:500px;
     height:300px;
@@ -1139,6 +1148,7 @@ textarea {
   h2,
   h3 {
     page-break-after: avoid;
+    
   }
 }
 
